@@ -60,10 +60,10 @@
     </objects>
     <resources>
         <namedColor name="GreyText">
-            <color red="0.25098040700000002" green="0.25098040700000002" blue="0.25098040700000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.25099998712539673" green="0.25099998712539673" blue="0.25099998712539673" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="myYellow">
-            <color red="0.98823523520000001" green="0.96470588450000005" blue="0.85490196939999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.98799997568130493" green="0.9649999737739563" blue="0.85500001907348633" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

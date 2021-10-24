@@ -10,6 +10,8 @@ import UIKit
 
 class homeVC: UIViewController{
     
+    var appointments_Arr = [appointment(full_name: "Vivaan, cognitive therapy", date: "24th Oct", typeOfTherapist: "Video call"), appointment(full_name: "Vivaan, cognitive therapy", date: "24th Oct", typeOfTherapist: "Video call"), appointment(full_name: "Vivaan, cognitive therapy", date: "24th Oct", typeOfTherapist: "Video call"), appointment(full_name: "Vivaan, cognitive therapy", date: "24th Oct", typeOfTherapist: "Video call"), appointment(full_name: "Vivaan, cognitive therapy", date: "24th Oct", typeOfTherapist: "Video call"), appointment(full_name: "Vivaan, cognitive therapy", date: "24th Oct", typeOfTherapist: "Video call"), appointment(full_name: "Vivaan, cognitive therapy", date: "24th Oct", typeOfTherapist: "Video call"), appointment(full_name: "Vivaan, cognitive therapy", date: "24th Oct", typeOfTherapist: "Video call"), appointment(full_name: "Vivaan, cognitive therapy", date: "24th Oct", typeOfTherapist: "Video call"), appointment(full_name: "Vivaan, cognitive therapy", date: "24th Oct", typeOfTherapist: "Video call"), appointment(full_name: "Vivaan, cognitive therapy", date: "24th Oct", typeOfTherapist: "Video call")]
+    
     @IBOutlet weak var UpcomingMeetingsTableView: UITableView!
     
     override func viewDidLoad() {
@@ -25,11 +27,13 @@ class homeVC: UIViewController{
 
 extension homeVC: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return appointments_Arr.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: K.UpcomingTableViewCellIdentifier) as! UpcomingTableViewCell
-        cell.dateLabel.text = "24th OCT"
+        cell.dateLabel.text = appointments_Arr[indexPath.row].date
+        cell.Psychologist_name_label.text = appointments_Arr[indexPath.row].full_name
+        cell.modeOfSession_Label.text = appointments_Arr[indexPath.row].typeOfTherapist
         return cell
     }
     

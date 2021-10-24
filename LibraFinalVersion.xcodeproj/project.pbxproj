@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2BC2C28DA38D211A57F1B321 /* Pods_LibraFinalVersion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AE46415EC0666D8B34E0573 /* Pods_LibraFinalVersion.framework */; };
-		72A9B3DB27253194005E61DE /* messages_vc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A9B3DA27253194005E61DE /* messages_vc.swift */; };
 		72A9B3DF27253542005E61DE /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A9B3DE27253542005E61DE /* ChatViewController.swift */; };
+		72A9B3E1272543FD005E61DE /* appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A9B3E0272543FD005E61DE /* appointment.swift */; };
+		72A9B3E3272552C5005E61DE /* video_call_vc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A9B3E2272552C5005E61DE /* video_call_vc.swift */; };
 		72AAF98527252E6A00A06C33 /* therapy_Vc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AAF98427252E6A00A06C33 /* therapy_Vc.swift */; };
 		72BB21532724941F00778A1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BB21522724941F00778A1A /* AppDelegate.swift */; };
 		72BB21552724941F00778A1A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BB21542724941F00778A1A /* SceneDelegate.swift */; };
@@ -29,8 +30,9 @@
 
 /* Begin PBXFileReference section */
 		163A7B993A6D9944C390266A /* Pods-LibraFinalVersion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LibraFinalVersion.release.xcconfig"; path = "Target Support Files/Pods-LibraFinalVersion/Pods-LibraFinalVersion.release.xcconfig"; sourceTree = "<group>"; };
-		72A9B3DA27253194005E61DE /* messages_vc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = messages_vc.swift; sourceTree = "<group>"; };
 		72A9B3DE27253542005E61DE /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		72A9B3E0272543FD005E61DE /* appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appointment.swift; sourceTree = "<group>"; };
+		72A9B3E2272552C5005E61DE /* video_call_vc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = video_call_vc.swift; sourceTree = "<group>"; };
 		72AAF98427252E6A00A06C33 /* therapy_Vc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = therapy_Vc.swift; sourceTree = "<group>"; };
 		72BB214F2724941F00778A1A /* LibraFinalVersion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LibraFinalVersion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72BB21522724941F00778A1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -116,8 +118,8 @@
 				72BB216D27249A1E00778A1A /* homeVC.swift */,
 				D6557B6D2724FE7B00EB90FE /* SurveyViewController.swift */,
 				72AAF98427252E6A00A06C33 /* therapy_Vc.swift */,
-				72A9B3DA27253194005E61DE /* messages_vc.swift */,
 				72A9B3DE27253542005E61DE /* ChatViewController.swift */,
+				72A9B3E2272552C5005E61DE /* video_call_vc.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -127,6 +129,7 @@
 			children = (
 				72BB216F27249DE600778A1A /* UpcomingTableViewCell.swift */,
 				72BB217027249DE600778A1A /* UpcomingTableViewCell.xib */,
+				72A9B3E0272543FD005E61DE /* appointment.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -264,13 +267,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72A9B3DB27253194005E61DE /* messages_vc.swift in Sources */,
 				72BB2169272496AA00778A1A /* InitialCheckupVC.swift in Sources */,
 				72BB216E27249A1E00778A1A /* homeVC.swift in Sources */,
+				72A9B3E3272552C5005E61DE /* video_call_vc.swift in Sources */,
 				D6557B6E2724FE7B00EB90FE /* SurveyViewController.swift in Sources */,
 				72BB21572724941F00778A1A /* ViewController.swift in Sources */,
 				D6557B702725008C00EB90FE /* surveyQuestion.swift in Sources */,
 				72BB217127249DE600778A1A /* UpcomingTableViewCell.swift in Sources */,
+				72A9B3E1272543FD005E61DE /* appointment.swift in Sources */,
 				72BB21672724966C00778A1A /* K.swift in Sources */,
 				72BB21532724941F00778A1A /* AppDelegate.swift in Sources */,
 				72A9B3DF27253542005E61DE /* ChatViewController.swift in Sources */,

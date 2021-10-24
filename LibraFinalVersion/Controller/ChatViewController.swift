@@ -38,6 +38,7 @@ struct media: MediaItem{
 
 class ChatViewController: MessagesViewController{
     
+    
     private let current_user = sender(senderId: "123", displayName: "Vivaan")
     private let other_user = sender(senderId: "876", displayName: "World")
     private var messages = [message]()
@@ -45,6 +46,7 @@ class ChatViewController: MessagesViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         messagesCollectionView.messagesDataSource = self
         messagesCollectionView.messagesLayoutDelegate = self
         messagesCollectionView.messagesDisplayDelegate = self
@@ -55,10 +57,10 @@ class ChatViewController: MessagesViewController{
         navigationItem.title = "Vivaan"
         
         //sample data
-        messages.append(message(sender: other_user, messageId: "123", sentDate: Date().addingTimeInterval(-86400) , kind: .text("Hey Vivaan, You are going to influence")))
-        messages.append(message(sender: current_user, messageId: "143", sentDate: Date().addingTimeInterval(-86405) , kind: .text("Hey Vivaan, You are going to influence")))
-        messages.append(message(sender: other_user, messageId: "153", sentDate: Date().addingTimeInterval(-86404) , kind: .text("Hey Vivaan, You are going to influence")))
-        messages.append(message(sender: current_user, messageId: "163", sentDate: Date().addingTimeInterval(-86403) , kind: .text("Hey Vivaan, You are going to influence")))
+        messages.append(message(sender: other_user, messageId: "123", sentDate: Date().addingTimeInterval(-86400) , kind: .text("Hey Vivaan, how are you?")))
+        messages.append(message(sender: current_user, messageId: "143", sentDate: Date().addingTimeInterval(-86405) , kind: .text("I feel anxious")))
+        messages.append(message(sender: other_user, messageId: "153", sentDate: Date().addingTimeInterval(-86404) , kind: .text("Could you tell me what you're feeling exactly?")))
+        messages.append(message(sender: current_user, messageId: "163", sentDate: Date().addingTimeInterval(-86403) , kind: .text("I feel like everything is changing around me")))
         
     }
      fileprivate func AddMessage(_ input: String){
